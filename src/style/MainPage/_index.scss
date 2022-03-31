@@ -1,0 +1,137 @@
+.weaterMain {
+    background-color: rgba(15, 15, 15, 0.561);
+    width: 80%;
+    margin: 3% auto;
+    padding: 2%;
+    border-radius: $border-radius;
+    color: white;
+}
+
+.weaterGrid {
+    display: grid;
+    height: 65vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 0.4fr;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: $border-radius;
+
+    &__big {
+        position: relative;
+
+        &--desc {
+            position: relative;
+            top: 5%;
+            left: 5%;
+
+            &:first-letter {
+                text-transform: capitalize;
+            }
+        }
+
+        &--info {
+            background-color: rgba(160, 160, 160, 0.4);
+            position: absolute;
+            bottom: 3%;
+            left: 2%;
+            width: 60%;
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: repeat(4, 1fr);
+            border-radius: $border-radius;
+        }
+
+        &--minMax {
+            background-color: rgba(39, 140, 255, 0.7);
+            border-top-left-radius: $border-radius;
+            border-bottom-left-radius: $border-radius;
+            grid-row: 1/5;
+            grid-column: 1/2;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            justify-items: center;
+
+            label {
+                font-size: 1.2rem;
+            }
+
+            p {
+                font-size: 1.6rem;
+                font-weight: 400;
+            }
+        }
+
+        &--main {
+            grid-row: 1/4;
+            grid-column: 2/3;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            padding: 1% 2%;
+            justify-content: space-evenly;
+
+            h1 {
+                font-size: 5.5rem;
+                margin: 2%;
+            }
+
+            h3 {
+                font-size: 1.3rem;
+            }
+        }
+
+        &--icon {
+            grid-row: 1/5;
+            grid-column: 3/4;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        &--feelsLike {
+            grid-row: 4/5;
+            grid-column: 2/3;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: center;
+
+            p {
+                padding: 0;
+                margin: 0 3%;
+            }
+        }
+    }
+
+    &__side {
+        position: relative;
+        background-color: rgba(33, 33, 33, 0.9);
+        border-top-right-radius: $border-radius;
+        border-bottom-right-radius: $border-radius;
+        text-align: center;
+
+        &--info {
+            position: relative;
+            top: 8%;
+            width: 80%;
+            margin: 0 auto;
+
+            &Div {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                align-items: center;
+                justify-content: center;
+                border-bottom: 1px solid white;
+                margin: 5% auto;
+                padding: 1% 0%;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+@import './media';

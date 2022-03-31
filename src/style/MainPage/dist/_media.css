@@ -1,0 +1,101 @@
+@media screen and (max-width: 1300px) {
+  .weaterGrid {
+    grid-template-columns: 1fr 0.5fr;
+  }
+  .weaterGrid__big--desc {
+    top: 3%;
+  }
+  .weaterGrid__big--info {
+    bottom: 2%;
+    width: 70%;
+  }
+  .weaterGrid__big--minMax {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .weaterGrid__big--minMax label {
+    font-size: 1rem;
+  }
+  .weaterGrid__big--minMax p {
+    margin: 1% 0%;
+    font-size: 1.5rem;
+  }
+  .weaterGrid__big--main {
+    flex-direction: column;
+    padding: 1% 2%;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .weaterGrid__big--main h1 {
+    font-size: 6rem;
+    margin: 0%;
+  }
+  .weaterGrid__big--icon img {
+    width: 12vw;
+  }
+  .weaterGrid__side--info {
+    top: 8%;
+  }
+  .weaterGrid__side--info p {
+    margin: 6% auto;
+    padding: 6% 0%;
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .weaterMain {
+    width: 90%;
+  }
+
+  .weaterGrid__big--desc {
+    top: 3%;
+  }
+  .weaterGrid__big--info {
+    bottom: 0%;
+    width: 90%;
+    height: 50vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .weaterGrid__big--minMax {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .weaterGrid__big--minMax label {
+    font-size: 1rem;
+  }
+  .weaterGrid__big--minMax p {
+    margin: 1% 0%;
+    font-size: 1.5rem;
+  }
+  .weaterGrid__big--main {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    flex-direction: row;
+    padding: 1% 2%;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .weaterGrid__big--main h1 {
+    font-size: 6rem;
+    margin: 0%;
+  }
+  .weaterGrid__big--icon {
+    grid-row: 4/5;
+    grid-column: 1/2;
+    flex-direction: row;
+  }
+  .weaterGrid__big--icon img {
+    width: 12vw;
+  }
+  .weaterGrid__big--feelsLike {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    flex-direction: row;
+  }
+  .weaterGrid__side--info p {
+    margin: 6% auto;
+    padding: 6% 0%;
+    font-size: 1.1rem;
+  }
+}

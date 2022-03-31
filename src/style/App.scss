@@ -1,0 +1,24 @@
+//vars
+$border-radius:1.5rem;
+
+@import "./NavBar/index";
+@import "./MainPage/index";
+
+body {
+    background: linear-gradient(55deg, rgba(33, 33, 33, 0.8), rgb(22, 22, 22));
+    background-color: rgb(33, 33, 33);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.err {
+    color: rgb(147, 255, 59);
+    font-weight: bold;
+}
+
+input,
+button {
+    outline: none;
+}

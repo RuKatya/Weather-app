@@ -1,0 +1,218 @@
+.navBar {
+  position: relative;
+  top: 0;
+  width: 100%;
+  padding: 1% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navBar__form {
+  position: relative;
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 0fr;
+  padding-bottom: 1.5%;
+}
+.navBar__form .err {
+  grid-column: 1/3;
+  position: absolute;
+  bottom: 0;
+  left: 23%;
+}
+.navBar__form input {
+  padding: 0% 1.5%;
+  border-top-left-radius: 0.5em;
+  border-bottom-left-radius: 0.5em;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.733);
+}
+.navBar__form input::placeholder {
+  color: #1f38c5;
+  font-size: 1.1rem;
+}
+.navBar__searchBtn {
+  border-top-right-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+  background-color: rgba(255, 255, 255, 0.733);
+  border: none;
+}
+.navBar__menuBtn {
+  width: 9%;
+  background: none;
+  border: none;
+  display: none;
+  position: absolute;
+  right: 3%;
+  padding: 0;
+  color: #000;
+}
+.navBar__menuBtn img {
+  width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+  .navBar__menuBtn {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navBar {
+    height: 6vh;
+    padding-bottom: 4%;
+  }
+  .navBar__form {
+    display: grid;
+    grid-template-columns: 1fr 0.2fr;
+    width: 75%;
+    margin: 0 auto;
+  }
+  .navBar__form .err {
+    bottom: 0.5vh;
+    left: 25%;
+  }
+  .navBar__form input {
+    width: 94%;
+    padding: 3%;
+  }
+  .navBar__searchBtn {
+    width: 80%;
+    padding: 2%;
+  }
+  .navBar__searchBtn img {
+    width: 45%;
+  }
+}
+.weaterMain {
+  background-color: rgba(15, 15, 15, 0.561);
+  width: 80%;
+  margin: 3% auto;
+  padding: 2%;
+  border-radius: 1.5rem;
+  color: white;
+}
+
+.weaterGrid {
+  display: grid;
+  height: 65vh;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 0.4fr;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1.5rem;
+}
+.weaterGrid__big {
+  position: relative;
+}
+.weaterGrid__big--desc {
+  position: relative;
+  top: 5%;
+  left: 5%;
+}
+.weaterGrid__big--desc:first-letter {
+  text-transform: capitalize;
+}
+.weaterGrid__big--info {
+  background-color: rgba(160, 160, 160, 0.4);
+  position: absolute;
+  bottom: 3%;
+  left: 2%;
+  width: 60%;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  border-radius: 1.5rem;
+}
+.weaterGrid__big--minMax {
+  background-color: rgba(39, 140, 255, 0.7);
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+  grid-row: 1/5;
+  grid-column: 1/2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+.weaterGrid__big--minMax label {
+  font-size: 1.2rem;
+}
+.weaterGrid__big--minMax p {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.weaterGrid__big--main {
+  grid-row: 1/4;
+  grid-column: 2/3;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 1% 2%;
+  justify-content: space-evenly;
+}
+.weaterGrid__big--main h1 {
+  font-size: 5.5rem;
+  margin: 2%;
+}
+.weaterGrid__big--main h3 {
+  font-size: 1.3rem;
+}
+.weaterGrid__big--icon {
+  grid-row: 1/5;
+  grid-column: 3/4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.weaterGrid__big--feelsLike {
+  grid-row: 4/5;
+  grid-column: 2/3;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+.weaterGrid__big--feelsLike p {
+  padding: 0;
+  margin: 0 3%;
+}
+.weaterGrid__side {
+  position: relative;
+  background-color: rgba(33, 33, 33, 0.9);
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  text-align: center;
+}
+.weaterGrid__side--info {
+  position: relative;
+  top: 7%;
+}
+.weaterGrid__side--info p {
+  width: 80%;
+  border-bottom: 1px solid white;
+  margin: 5% auto;
+  padding: 5% 0%;
+  font-size: 1.2rem;
+}
+
+body {
+  background: linear-gradient(55deg, rgba(33, 33, 33, 0.8), #161616);
+  background-color: #212121;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.err {
+  color: #93ff3b;
+  font-weight: bold;
+}
+
+input,
+button {
+  outline: none;
+}

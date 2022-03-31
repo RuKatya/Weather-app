@@ -1,0 +1,74 @@
+.weaterMain {
+  background-color: #0f0f0f;
+  width: 80%;
+  margin: 3% auto;
+  padding: 2%;
+  border-radius: 1.5rem;
+}
+
+.weaterGrid {
+  display: grid;
+  height: 65vh;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 0.4fr;
+  background: linear-gradient(60deg, rgba(195, 51, 195, 0.8), rgba(53, 53, 170, 0.8));
+  border-radius: 1.5rem;
+}
+.weaterGrid__big {
+  position: relative;
+}
+.weaterGrid__big--info {
+  background-color: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  bottom: 3%;
+  left: 3%;
+  width: 70%;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+}
+.weaterGrid__big--minMax {
+  grid-row: 1/5;
+  grid-column: 1/2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 1.7rem;
+}
+.weaterGrid__big--main {
+  background-color: yellow;
+  grid-row: 1/4;
+  grid-column: 2/3;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 1% 2%;
+}
+.weaterGrid__big--main h1 {
+  font-size: 3rem;
+  margin: 2%;
+}
+.weaterGrid__big--icon {
+  background-color: #064b34;
+  grid-row: 1/5;
+  grid-column: 3/4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.weaterGrid__big--feelsLike {
+  background-color: chocolate;
+  grid-row: 4/5;
+  grid-column: 2/3;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.weaterGrid__side {
+  position: relative;
+  background-color: rgba(33, 33, 33, 0.7);
+}

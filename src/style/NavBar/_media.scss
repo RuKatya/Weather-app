@@ -1,0 +1,41 @@
+@media screen and (max-width: 500px) {
+    .navBar {
+        &__menuBtn {
+            display: block;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navBar {
+        height: 6vh;
+        padding-bottom: 4%;
+
+        &__form {
+            display: grid;
+            grid-template-columns: 1fr 0.2fr;
+            width: 75%;
+            margin: 0 auto;
+
+            .err {
+                bottom: 0.5vh;
+                left: 25%;
+            }
+
+            input {
+                width: 94%;
+                padding: 3%;
+            }
+        }
+
+
+        &__searchBtn {
+            width: 80%;
+            padding: 2%;
+
+            img {
+                width: 45%;
+            }
+        }
+    }
+}

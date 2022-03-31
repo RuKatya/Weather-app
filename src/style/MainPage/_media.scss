@@ -1,0 +1,396 @@
+@media screen and (max-width: 1300px) {
+    .weaterGrid {
+        grid-template-columns: 1fr 0.5fr;
+
+        &__big {
+            &--desc {
+                top: 3%;
+            }
+
+            &--info {
+                bottom: 2%;
+                width: 70%;
+            }
+
+            &--minMax {
+                grid-template-columns: repeat(1, 1fr);
+
+                label {
+                    font-size: 1rem;
+                }
+
+                p {
+                    margin: 1% 0%;
+                    font-size: 1.5rem;
+                }
+            }
+
+            &--main {
+                flex-direction: column;
+                padding: 1% 2%;
+                align-items: center;
+                justify-content: space-evenly;
+
+                h1 {
+                    font-size: 6rem;
+                    margin: 0%;
+                }
+            }
+
+            &--icon {
+                img {
+                    width: 12vw;
+                }
+            }
+        }
+
+        &__side {
+            &--info {
+                top: 12%;
+
+                &Div {
+                    // display: grid;
+                    // grid-template-columns: repeat(2, 1fr);
+                    // align-items: center;
+                    // justify-content: center;
+                    // border-bottom: 1px solid white;
+                    // margin: 5% auto;
+                    // padding: 1% 0%;
+                    // font-size: 1.2rem;
+                }
+
+                p {
+                    margin: 6% auto;
+                    padding: 6% 0%;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .weaterMain {
+        // background-color: rgba(61, 2, 2, 0.561);
+        width: 90%;
+        // margin: 3% auto;
+        // padding: 2%;
+        // border-radius: $border-radius;
+        // color: white;
+    }
+
+    .weaterGrid {
+        // display: grid;
+        // height: 75vh;
+        // position: relative;
+        // display: grid;
+        // grid-template-columns: 1fr !important;
+        grid-template-columns: 1fr 0.7fr; // background-position: center;
+        // background-repeat: no-repeat;
+        // background-size: cover;
+        // border-radius: $border-radius;
+
+        &__big {
+            // position: relative;
+            // height: 10vh;
+
+            &--desc {
+                // position: relative;
+                top: 1%;
+                // left: 5%;
+
+                &:first-letter {
+                    // text-transform: capitalize;
+                }
+            }
+
+            &--info {
+                // background-color: rgba(160, 160, 160, 0.4);
+                // position: absolute;
+                bottom: 5%;
+                left: 5%;
+                // margin: 0 auto;
+                width: 90%;
+                height: 50vh;
+                // display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(4, 1fr);
+                // border-radius: $border-radius;
+            }
+
+            &--minMax {
+                // background-color: rgba(39, 140, 255, 0.7);
+                border-top-left-radius: $border-radius;
+                border-top-right-radius: $border-radius;
+                border-bottom-left-radius: 0;
+                grid-row: 1/2;
+                grid-column: 1/2;
+                // display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                // align-items: center;
+                // justify-items: center;
+
+                label {
+                    font-size: 1rem;
+                }
+
+                p {
+                    margin: 1% 0%;
+                    font-size: 1.5rem;
+                    // font-weight: 400;
+                }
+            }
+
+            &--main {
+                grid-row: 2/3;
+                grid-column: 1/2;
+                // display: flex;
+                flex-direction: row;
+                // align-items: flex-end;
+                padding: 1% 2%;
+                align-items: center;
+                justify-content: space-evenly;
+
+                h1 {
+                    font-size: 6rem;
+                    margin: 0%;
+                }
+
+                h3 {
+                    // font-size: 1.3rem;
+                }
+            }
+
+            &--icon {
+
+                grid-row: 4/5;
+                grid-column: 1/2;
+
+                // display: flex;
+                flex-direction: row;
+
+                // justify-content: space-around;
+                // align-items: center;
+
+                img {
+                    width: 12vw;
+                }
+            }
+
+            &--feelsLike {
+                grid-row: 3/4;
+                grid-column: 1/2;
+                // display: flex;
+                flex-direction: row;
+                // align-items: flex-start;
+                // justify-content: center;
+                // margin: 0;
+                // padding: 0;
+
+                p {
+                    // padding: 0;
+                    // margin: 0 3%;
+                }
+            }
+        }
+
+        &__side {
+            // position: relative;
+            // background-color: rgba(33, 33, 33, 0.9);
+            // border-top-right-radius: $border-radius;
+            // border-bottom-right-radius: $border-radius;
+            // text-align: center;
+
+
+            &--info {
+                width: 80%;
+                margin: 0 auto;
+                // position: relative;
+                // top: 8%;
+
+                &Div {
+                    // display: grid;
+                    // grid-template-columns: repeat(2, 1fr);
+                    // align-items: center;
+                    // justify-content: center;
+                    // border-bottom: 1px solid white;
+                    // margin: 5% auto;
+                    // padding: 1% 0%;
+                    // font-size: 1.2rem;
+                }
+
+
+                p {
+                    // width: 80%;
+                    // border-bottom: 1px solid white;
+                    margin: 6% auto;
+                    padding: 6% 0%;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    .weaterMain {
+        // background-color: rgba(61, 2, 2, 0.561);
+        width: 90%;
+        // margin: 3% auto;
+        // padding: 2%;
+        // border-radius: $border-radius;
+        // color: white;
+    }
+
+    .weaterGrid {
+        // display: grid;
+        // height: 75vh;
+        // position: relative;
+        // display: grid;
+        // grid-template-columns: 1fr !important;
+        grid-template-columns: 1fr 0.8fr; // background-position: center;
+        // background-repeat: no-repeat;
+        // background-size: cover;
+        // border-radius: $border-radius;
+
+        &__big {
+            // position: relative;
+            // height: 10vh;
+
+            &--desc {
+                // position: relative;
+                top: 1%;
+                // left: 5%;
+
+                &:first-letter {
+                    // text-transform: capitalize;
+                }
+            }
+
+            &--info {
+                // background-color: rgba(160, 160, 160, 0.4);
+                // position: absolute;
+                bottom: 5%;
+                left: 5%;
+                // margin: 0 auto;
+                width: 90%;
+                height: 50vh;
+                // display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(4, 1fr);
+                // border-radius: $border-radius;
+            }
+
+            &--minMax {
+                // background-color: rgba(39, 140, 255, 0.7);
+                border-top-left-radius: $border-radius;
+                border-top-right-radius: $border-radius;
+                border-bottom-left-radius: 0;
+                grid-row: 1/2;
+                grid-column: 1/2;
+                // display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                // align-items: center;
+                // justify-items: center;
+
+                label {
+                    font-size: 1rem;
+                }
+
+                p {
+                    margin: 1% 0%;
+                    font-size: 1.5rem;
+                    // font-weight: 400;
+                }
+            }
+
+            &--main {
+                grid-row: 2/3;
+                grid-column: 1/2;
+                // display: flex;
+                flex-direction: column;
+                // align-items: flex-end;
+                padding: 1% 2%;
+                align-items: center;
+                justify-content: space-evenly;
+
+                h1 {
+                    font-size: 6rem;
+                    margin: 0%;
+                }
+
+                h3 {
+                    // font-size: 1.3rem;
+                }
+            }
+
+            &--icon {
+
+                grid-row: 4/5;
+                grid-column: 1/2;
+
+                // display: flex;
+                flex-direction: row;
+
+                // justify-content: space-around;
+                // align-items: center;
+
+                img {
+                    width: 22vw;
+                }
+            }
+
+            &--feelsLike {
+                grid-row: 3/4;
+                grid-column: 1/2;
+                // display: flex;
+                flex-direction: row;
+                // align-items: flex-start;
+                // justify-content: center;
+                // margin: 0;
+                // padding: 0;
+
+                p {
+                    // padding: 0;
+                    // margin: 0 3%;
+                }
+            }
+        }
+
+        &__side {
+            // position: relative;
+            // background-color: rgba(33, 33, 33, 0.9);
+            // border-top-right-radius: $border-radius;
+            // border-bottom-right-radius: $border-radius;
+            // text-align: center;
+
+
+            &--info {
+                width: 80%;
+                margin: 0 auto;
+                // position: relative;
+                top: 20%;
+
+                &Div {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    align-items: center;
+                    justify-content: center;
+                    border-bottom: 1px solid white;
+                    margin: 8% auto;
+                    padding: 1% 0%;
+                    font-size: 1.2rem;
+                }
+
+
+                p {
+                    // width: 80%;
+                    // border-bottom: 1px solid white;
+                    margin: 6% auto;
+                    padding: 6% 0%;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+}
